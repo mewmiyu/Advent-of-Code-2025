@@ -36,7 +36,7 @@ if __name__ == '__main__':
     input_numbers = []
     with open("input.txt") as file:
         for line in file:
-            input_numbers.append(line)
+            input_numbers.append(line.strip())
 
     result, zeros = elves_day_one_zero_crossings(50, input_numbers)
     #result, zeros = elves_day_one_zero(50, input_numbers)
