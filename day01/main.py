@@ -1,6 +1,6 @@
-def elves_day_one_zero(current, input_numbers):
+def elves_day_one_zero(current, input_number):
     zero = 0
-    for x in input_numbers:
+    for x in input_number:
         val = int(x[1:])
         if x[0] == 'R':
             current = (current + val) % 100
@@ -13,9 +13,9 @@ def elves_day_one_zero(current, input_numbers):
     return current, zero
 
 
-def elves_day_one_zero_crossings(current, input_numbers):
+def elves_day_one_zero_crossings(current, input_number):
     zero = 0
-    for x in input_numbers:
+    for x in input_number:
         prev_current = current
         val = int(x[1:])
         if x[0] == 'R':
